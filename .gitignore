@@ -205,3 +205,51 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+# --- Django ---
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+local_settings.py
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
+# --- Elasticsearch ---
+# داده‌های لوکال نودهای ES
+elasticsearch/data/
+elasticsearch/logs/
+elasticsearch/config/certs/
+elasticsearch/config/users/
+elasticsearch/config/users_roles/
+
+
+# --- Caches ---
+*.cache
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Coverage & Testing ---
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
