@@ -1,4 +1,5 @@
 from django.apps import AppConfig
+from .connections import *
 
 
 class FilterConfig(AppConfig):
