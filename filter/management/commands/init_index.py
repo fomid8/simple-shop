@@ -1,4 +1,4 @@
-from ...documents import ProductDocument
+from ...documents import *
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
@@ -6,5 +6,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.stdout.write("Initializing Elasticsearch index...")
-        ProductDocument.init()
+        #ProductDocument.init()
+        #CategoryDocument.init()
+        OrderedProductDocument.init()
+        CartDocument.init()
         self.stdout.write(self.style.SUCCESS("Index initialized successfully"))
